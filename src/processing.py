@@ -1,16 +1,20 @@
 import pandas as pd
 from nltk.sentiment import SentimentIntensityAnalyzer
 import re
-
 import nltk
 from nltk.corpus import stopwords
 
-try:
-    stopwords.words("english")
-except LookupError:
-    nltk.download("stopwords")
+# Download missing resources on demand
+for resource in ["stopwords", "vader_lexicon"]:
+    try:
+        nltk.data.find(f"corpora/{resource}")
+    except LookupError:
+        nltk.download(resource)
 
 STOPWORDS = set(stopwords.words("english"))
+sia = SentimentIntensityAnalyzer()
+
+
 
 
 sia = SentimentIntensityAnalyzer()
