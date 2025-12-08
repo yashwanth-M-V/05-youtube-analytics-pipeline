@@ -66,7 +66,7 @@ if url:
                 df = process_comments(fetch_comments(video_id, max_comments=500))
 
             st.success(f"Fetched {len(df)} comments successfully!")
-            st.write(df.head())
+            
 
             # ----- Analytics -----
             counts = sentiment_counts(df)
