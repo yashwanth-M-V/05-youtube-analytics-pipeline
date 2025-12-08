@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=3.12.3
   - pip
+  - python-dotenv
   - pip:
       - streamlit==1.51.0
       - azure-storage-blob
@@ -51,7 +52,6 @@ dependencies:
       - pydeck==0.9.1
       - pyparsing==3.2.5
       - python-dateutil==2.9.0.post0
-      - python-dotenv
       - pytz==2025.2
       - referencing==0.37.0
       - regex==2025.11.3
