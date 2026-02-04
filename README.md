@@ -140,8 +140,3 @@ YOUTUBE_API_KEY=YOUR_KEY_HERE
 
 ---
 
-## 📢 Contact / Portfolio
-
-* LinkedIn:
-* Portfolio:
-* GitHub:
